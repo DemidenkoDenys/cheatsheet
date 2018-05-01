@@ -1,0 +1,58 @@
+*{
+	outline: 0px;
+}
+
+main{
+	padding: 50px;
+}
+
+
+h3{
+	margin: 2rem 0;
+	font-size: 2rem;
+}
+
+.collapsible.popout>li{
+	overflow: hidden;
+}
+
+.collapsible-body.hidden{
+	display: none !important;
+}
+
+.collapsible-header{
+	font-weight: bold;
+}
+
+.collapsible-header:before{
+	content: attr(data-index);
+	margin-right: 15px;
+	width: 25px;
+	text-align: center;
+	border: 2px solid black;
+	border-radius:  50%;
+}
+
+.collapsible-header strong,
+.collapsible-body strong{
+	font-weight: bold;
+	color: #1565C0;
+}
+
+.collapsible-header strong:before,
+.collapsible-header strong:after,
+.collapsible-body strong:before,
+.collapsible-body strong:after{
+	content: " ";
+	white-space: pre;
+}
+
+@media screen and (max-width: 768px){
+	main{
+		padding: 25px;
+	}
+
+	.collapsible.popout>li{
+		margin: 0;
+	}
+}
